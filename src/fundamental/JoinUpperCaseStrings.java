@@ -13,6 +13,7 @@ public class JoinUpperCaseStrings {
 
     public static String joinUpperCaseStrings(List<String> list) {
         String collect = list.stream().map(String::toUpperCase).collect(Collectors.joining(","));
+//        list.stream().map(s -> s.toUpperCase())
         return collect;
     }
 }
